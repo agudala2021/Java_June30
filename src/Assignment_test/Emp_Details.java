@@ -1,17 +1,32 @@
 package Assignment_test;
 
 public class Emp_Details {
+    @Override
+    public String toString() {
+        return "Emp_Details{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", emp_no='" + emp_no + '\'' +
+                ", salary=" + salary +
+                ", homeAddress='" + homeAddress + '\'' +
+                ", company='" + company + '\'' +
+                ", state='" + state + '\'' +
+                ", skill='" + skill + '\'' +
+                ", vaccine_status='" + vaccine_status + '\'' +
+                '}';
+    }
+
     private String firstName;
     private String lastName;
     private String emp_no;
-    private String salary;
+    private int salary;
     private String homeAddress;
     private String company;
     private String state;
     private String skill;
     private String vaccine_status;
 
-public Emp_Details(String firstName, String lastName, String emp_no, String salary, String homeAddress, String company, String state, String skill,String vaccine_status){
+public Emp_Details(String firstName, String lastName, String emp_no, int salary, String homeAddress, String company, String state, String skill,String vaccine_status){
     this.firstName= firstName;
     this.lastName= lastName;
     this.emp_no = emp_no;
@@ -37,10 +52,8 @@ public Emp_Details(String firstName, String lastName, String emp_no, String sala
         this.lastName = lastName;
     }
 
-    public String getSalary() {
-        return salary;
-    }
-    public void setSalary(String salary) {
+    public int getSalary() { return salary; }
+    public void setSalary(int salary) {
         this.salary = salary;
     }
 
