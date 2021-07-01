@@ -12,7 +12,7 @@ public class Day2_VaccineCheckMain {
     public static void main(String[] args) {
         List<Emp_Details> EmpList = new ArrayList<>();
         Emp_Details emp1 = new Emp_Details("Tom","Flaherty","10001",1000,"Nashua","Birchill","NH","Architect","Y");
-        Emp_Details emp2 = new Emp_Details("Jim","Shally","10002",3000,"Sharon","Collab","MA","PMO","Y");
+        Emp_Details emp2 = new Emp_Details("Jim","Shally","10002",3000,"Nashua","Collab","MA","PMO","Y");
         Emp_Details emp3 = new Emp_Details("Doug","Feldman","10003",6000,"Austin","Centro","TX","VP","N");
         Emp_Details emp4 = new Emp_Details("KP","PRao","10004",9000,"Altanta","Avaya","GA","Informatica","N");
         Emp_Details emp5 = new Emp_Details("Rob","F","10008",4000,"York","Takeda","NH","SA","Y");
