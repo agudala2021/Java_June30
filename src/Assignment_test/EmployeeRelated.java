@@ -41,13 +41,25 @@ public class EmployeeRelated {
         return salaryDetail;
     }
 
-    public Map<String, Emp_Details> getSalaryDetail2(List<Emp_Details> Emp_List) {
+//    public Map<String, Emp_Details> getSalaryDetail2(List<Emp_Details> Emp_List) {
+//
+//        Map<String, Emp_Details> salaryDetail = new HashMap<>();
+//        for (Emp_Details e : Emp_List) {
+//            if (e.getSalary() >= 5000) {
+//                salaryDetail.put(e.getEmp_no(),e);
+//            }
+//        }
+//        return salaryDetail;
+//    }
 
-        Map<String, Emp_Details> salaryDetail = new HashMap<>();
-        for (Emp_Details e : Emp_List) {
-            if (e.getSalary() >= 5000) {
-                salaryDetail.put(e.getEmp_no(),e);
-            }
+    public Map<String, Integer> getSalaryDetail2(List<Emp_Details> Emp_List) {
+        Map<String, Integer> salaryDetail = new HashMap<>();
+        try {
+            salaryDetail.put(Emp_List.get(0).getEmp_no(), Emp_List.get(0).getSalary() + 100);
+        }
+        catch(Exception e){
+            System.out.println("we should not try to access elements of an empty list");
+//            throw new ArithmeticException("Salary cannot be NULL");
         }
         return salaryDetail;
     }

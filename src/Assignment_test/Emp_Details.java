@@ -1,20 +1,6 @@
 package Assignment_test;
 
 public class Emp_Details {
-    @Override
-    public String toString() {
-        return "Emp_Details{" +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", emp_no='" + emp_no + '\'' +
-                ", salary=" + salary +
-                ", homeAddress='" + homeAddress + '\'' +
-                ", company='" + company + '\'' +
-                ", state='" + state + '\'' +
-                ", skill='" + skill + '\'' +
-                ", vaccine_status='" + vaccine_status + '\'' +
-                '}';
-    }
 
     private String firstName;
     private String lastName;
@@ -97,6 +83,21 @@ public Emp_Details(String firstName, String lastName, String emp_no, int salary,
     }
     public void setVaccine_status(String vaccine_status) {
         this.vaccine_status = vaccine_status;
+    }
+
+    @Override
+    public String toString() {
+        return "Emp_Details{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", emp_no='" + emp_no + '\'' +
+                ", salary=" + salary +
+                ", homeAddress='" + homeAddress + '\'' +
+                ", company='" + company + '\'' +
+                ", state='" + state + '\'' +
+                ", skill='" + skill + '\'' +
+                ", vaccine_status='" + vaccine_status + '\'' +
+                '}';
     }
 
 }

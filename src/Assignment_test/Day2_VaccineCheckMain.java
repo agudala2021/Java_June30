@@ -1,8 +1,6 @@
 package Assignment_test;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Day2_VaccineCheckMain {
 
@@ -22,7 +20,18 @@ public class Day2_VaccineCheckMain {
         EmpList.add(emp3);
         EmpList.add(emp4);
         EmpList.add(emp5);
-//
+
+        List<Assignment_test.Emp_Asset_Info> EmpAssetList = new ArrayList<>();
+        Assignment_test.Emp_Asset_Info empas1 = new Assignment_test.Emp_Asset_Info("3434253");
+        Assignment_test.Emp_Asset_Info empas2 = new Assignment_test.Emp_Asset_Info("3432543");
+
+        EmpAssetList.add(empas1);
+        EmpAssetList.add(empas2);
+
+//        System.out.println(empas1.getEmp_no());
+        System.out.println("Original List : \n" + EmpList);
+        Collections.singleton(EmpAssetList);
+        System.out.println(EmpList);
 //        EmpVaccineStatus empVaccineStatus = new EmpVaccineStatus();
 //        empVaccineStatus.getEmpVaccineStatus(EmpList);
         EmployeeRelated employeeRelated = new EmployeeRelated();
@@ -34,9 +43,13 @@ public class Day2_VaccineCheckMain {
         Map<String, String> salaryDetail=employeeRelated.getSalaryDetail(EmpList);
         System.out.println(salaryDetail);
 
-        Map<String, Emp_Details> employeeSalaryDetail=employeeRelated.getSalaryDetail2(EmpList);
-        System.out.println(employeeSalaryDetail+"\n");
+//        Map<String, Emp_Details> employeeSalaryDetail=employeeRelated.getSalaryDetail2(EmpList);
+//        System.out.println(employeeSalaryDetail+"\n");
 
+
+        List<Emp_Details> EmpList2 = new ArrayList<>();
+        Map<String, Integer> employeeSalaryDetail2 = employeeRelated.getSalaryDetail2(EmpList2);
+        System.out.println(employeeSalaryDetail2);
 
     }
 }
